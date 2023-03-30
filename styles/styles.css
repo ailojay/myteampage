@@ -77,7 +77,7 @@ body{
     writing-mode: vertical-rl;
 }
 
-#test{
+#img-container {
     display: flex;
 }
 
