@@ -56,7 +56,7 @@ body{
 .pic-item {
     width: 300px;
     height: 426.5px;
-    margin: 50px;
+    margin: 10px;
 
 }
 
@@ -68,19 +68,32 @@ body{
 
 
 .text2-container {
-    width: 300px;
+    width: 238px;
     justify-content: end;
 
 }
 
 #text2 {
     writing-mode: vertical-rl;
+    margin-top: 10px;
+    margin-left: 1px;
 }
 
 #img-container {
     display: flex;
+
 }
 
-#p1{
+.img-down {
+    margin-top: 150px;
+}
+
+
+#text3 {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+/*#p1{
     writing-mode: vertical-rl;
 }
+
