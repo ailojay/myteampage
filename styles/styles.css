@@ -1,73 +1,87 @@
+/* FOR LARGE SCREEN DEVICE */
 .header-text {
-    display: flex;
-    justify-content: left;
-    justify-content: space-between;
-    margin-bottom: 50px;
-    margin-top: 50px;
+  display: flex;
+  justify-content: left;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
-body{
-    margin-left: 10%;
-    margin-right: 10%;
+body {
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 100px;
 }
 
 #main-text {
-    /* font-family: serif;
-    width: 27px;
-    height: 47px;
-    left: 243px;
-    top: 110px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 48px;
-    letter-spacing: -0.045em;
-    color: #000000; */
-    display: flex;
-    font-family:'PT Serif', serif;
-    
+  display: flex;
+  position: relative;
+  font-family: "PT Serif", "serif";
 
+  color: #000000;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.05rem;
 }
 
 .main-text2 {
-    font-family: 'Poppins';  
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
 }
 
-
-#paragraph-text {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 27px;
-   }
-
+.paragraph-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 27px;
+}
 
 .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    justify-content: center;
+  display: grid;
+  position: relative;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+  justify-content: center;
 }
 
 .pic-item {
+<<<<<<< HEAD
     width: 300px;
     height: 426.5px;
     margin: 10px;
 
+=======
+  width: 85%;
+  
 }
-
+.img-container:hover >img.pic-item{
+  transform: scale(0.9);
+>>>>>>> 7c52e2af209f57e19784ea27f7dcebd051046ccc
+}
 
 #text2 {
-    font-family: "PT serif";
-    font-size: 12px;
+  font-family: "PT serif";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  writing-mode: vertical-rl;
+}
+p {
+  font-family: "poppins";
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
 }
 
-
 .text2-container {
+<<<<<<< HEAD
     width: 238px;
     justify-content: end;
 
@@ -97,3 +111,127 @@ body{
     writing-mode: vertical-rl;
 }
 
+=======
+  width: 300px;
+  justify-content: end;
+}
+
+.img-container {
+  display: flex;
+}
+
+.grid-item2 {
+  margin-top: 110px;
+}
+
+.grid-item5 {
+  margin-top: 110px;
+}
+
+footer {
+  margin: 70px 0px 20px;
+}
+footer p {
+  color: #a9a9a9;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+
+  text-align: center;
+}
+
+/* FOR SMALLER SCREEN DEVICE */
+/* Media Query */
+
+@media screen and (max-width: 600px) {
+  body {
+    position: relative;
+
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 40px;
+  }
+  .header-text {
+    display: block;
+    align-items: start;
+  }
+  #main-text {
+    letter-spacing: 0.005rem;
+    margin-top: 90px;
+    font-size: 33px;
+  }
+  .paragraph-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 0px;
+    text-align: left;
+  }
+  .main-text2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    font-style: normal;
+  }
+  .grid-container {
+    position: relative;
+    grid-template-columns: auto auto;
+    gap: 4%;
+    justify-content: center;
+  }
+  .pic-item {
+    width: 85%;
+  }
+  .img-container:hover >img.pic-item{
+  transform: scale(0.9);
+}
+  
+  p {
+    font-size: 15px;
+  }
+
+  #text2 {
+    font-family: "PT serif";
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 11px;
+  }
+
+  .grid-item1 {
+    margin-top: 0px;
+  }
+
+  .grid-item2 {
+    margin-top: 90px;
+  }
+  .grid-item3 {
+    margin-top: 0px;
+  }
+
+  .grid-item4 {
+    margin-top: 90px;
+  }
+
+  .grid-item5 {
+    margin-top: 0px;
+  }
+  .grid-item6 {
+    margin-top: 90px;
+  }
+
+  footer {
+    margin-top: 50%;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
+}
+>>>>>>> 7c52e2af209f57e19784ea27f7dcebd051046ccc
